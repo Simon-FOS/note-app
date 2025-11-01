@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONTAINER STYLING */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #09b5c1, #95c0ff);
+    color: white;
+    padding: 4%;
+}
+
+/* PAGE TITLE */
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* CREATE NOTE BUTTON */
+.container button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* spacing between icon and text */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #09b5c1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Adjust size of edit icon in button */
+.container button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* NOTES CONTAINER */
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* NOTE BOX STYLING */
+.input-box {
+    width: 60%;
+    min-height: 100px;
+    background-color: rgba(240, 235, 235, 0.607);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    color: #200202;
+    font-size: 16px;
+    outline: none;
+    position: relative;
+}
+
+/* Adjust delete icon inside notes */
+.input-box img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.input-box img:hover {
+    opacity: 1;
+}
